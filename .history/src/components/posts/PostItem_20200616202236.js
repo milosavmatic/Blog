@@ -1,0 +1,23 @@
+import React from 'react';
+
+const PostItem = (props) => {
+    return (
+        <div
+            class="ui centered card"
+            style={{ width: 500, backgroundColor: '#2e2d35', height: 1000 }}
+        >
+            <div class="image">
+                <img
+                    src={props.image}
+                    alt="Card cap"
+                    style={{ marginTop: 20 }}
+                />
+            </div>
+            <div class="content">
+                <h1 class="header">{props.title}</h1>
+            </div>
+        </div>
+    );
+};
+
+export default PostItem;
