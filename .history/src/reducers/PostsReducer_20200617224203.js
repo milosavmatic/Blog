@@ -1,0 +1,1 @@
+import {FETCH_ERROR, FETCH_POSTS, FETCH_POSTS} from '../actions/types'
