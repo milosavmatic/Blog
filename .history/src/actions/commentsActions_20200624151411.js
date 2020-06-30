@@ -1,0 +1,7 @@
+import posts from '../api/posts';
+import { POST_COMMENTS } from './types';
+
+export const postComments = (commentsData, post_id) => async (dispatch) => {
+    const response = await posts.post(`/comments/${post_id}`, commentsData);
+    dispatch({ type: POST_COMMENTS, payload: response.data });
+};
